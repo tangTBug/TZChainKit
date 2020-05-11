@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TZChainKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "A test framework."
 
   # This description is used to generate tags and improve search results.
