@@ -1,0 +1,6 @@
+framework module TZChainKit {
+  umbrella header "TZChainKit.h"
+
+  export *
+  module * { export * }
+}
