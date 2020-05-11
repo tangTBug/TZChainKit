@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/tangzeng/TZChainKit.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/tangzeng/TZChainKit.git", :tag => spec.version.to_s }
   spec.ios.deployment_target = '9.0'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = 'TZChainKit.framework'
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -106,7 +106,9 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
-
+  spec.resource_bundles = {
+    'TZChainKit' => ['TZBundle.bundle']
+  }
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
